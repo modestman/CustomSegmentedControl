@@ -14,6 +14,9 @@
 		84D844361CAFBCF400CA44ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D844351CAFBCF400CA44ED /* Assets.xcassets */; };
 		84D844391CAFBCF400CA44ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D844371CAFBCF400CA44ED /* LaunchScreen.storyboard */; };
 		84D844441CAFBCF400CA44ED /* CustomSegmentedControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D844431CAFBCF400CA44ED /* CustomSegmentedControlTests.m */; };
+		84DBC4E61CB01FD4009C3A98 /* SegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DBC4E51CB01FD4009C3A98 /* SegmentedControl.m */; };
+		84DBC4E81CB026E2009C3A98 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DBC4E71CB026E2009C3A98 /* QuartzCore.framework */; };
+		84DBC4EA1CB026EE009C3A98 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DBC4E91CB026EE009C3A98 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		84D8443F1CAFBCF400CA44ED /* CustomSegmentedControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSegmentedControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D844431CAFBCF400CA44ED /* CustomSegmentedControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentedControlTests.m; sourceTree = "<group>"; };
 		84D844451CAFBCF400CA44ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DBC4E41CB01FD4009C3A98 /* SegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControl.h; sourceTree = "<group>"; };
+		84DBC4E51CB01FD4009C3A98 /* SegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControl.m; sourceTree = "<group>"; };
+		84DBC4E71CB026E2009C3A98 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		84DBC4E91CB026EE009C3A98 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DBC4EA1CB026EE009C3A98 /* CoreGraphics.framework in Frameworks */,
+				84DBC4E81CB026E2009C3A98 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				84D844281CAFBCF400CA44ED /* CustomSegmentedControl */,
+				84DBC4EB1CB02709009C3A98 /* Frameworks */,
 				84D844421CAFBCF400CA44ED /* CustomSegmentedControlTests */,
 				84D844271CAFBCF400CA44ED /* Products */,
 			);
@@ -88,8 +98,9 @@
 				84D844321CAFBCF400CA44ED /* Main.storyboard */,
 				84D844351CAFBCF400CA44ED /* Assets.xcassets */,
 				84D844371CAFBCF400CA44ED /* LaunchScreen.storyboard */,
-				84D8443A1CAFBCF400CA44ED /* Info.plist */,
 				84D844291CAFBCF400CA44ED /* Supporting Files */,
+				84DBC4E41CB01FD4009C3A98 /* SegmentedControl.h */,
+				84DBC4E51CB01FD4009C3A98 /* SegmentedControl.m */,
 			);
 			path = CustomSegmentedControl;
 			sourceTree = "<group>";
@@ -98,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				84D8442A1CAFBCF400CA44ED /* main.m */,
+				84D8443A1CAFBCF400CA44ED /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,6 +121,15 @@
 				84D844451CAFBCF400CA44ED /* Info.plist */,
 			);
 			path = CustomSegmentedControlTests;
+			sourceTree = "<group>";
+		};
+		84DBC4EB1CB02709009C3A98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84DBC4E91CB026EE009C3A98 /* CoreGraphics.framework */,
+				84DBC4E71CB026E2009C3A98 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +236,7 @@
 			files = (
 				84D844311CAFBCF400CA44ED /* ViewController.m in Sources */,
 				84D8442E1CAFBCF400CA44ED /* AppDelegate.m in Sources */,
+				84DBC4E61CB01FD4009C3A98 /* SegmentedControl.m in Sources */,
 				84D8442B1CAFBCF400CA44ED /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +426,7 @@
 				84D8444A1CAFBCF400CA44ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84D8444B1CAFBCF400CA44ED /* Build configuration list for PBXNativeTarget "CustomSegmentedControlTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +435,7 @@
 				84D8444D1CAFBCF400CA44ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SegmentedControl.h"
 
 @interface ViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet SegmentedControl *segmentedControl;
+@property (strong, nonatomic) IBOutlet UILabel *label;
+
+- (IBAction)selectedIndexChanged:(SegmentedControl *)sender;
+- (IBAction)selectFirst:(UIButton *)sender;
+- (IBAction)addSegment:(UIButton *)sender;
+- (IBAction)inserSegment:(UIButton *)sender;
+- (IBAction)removeSegment:(UIButton *)sender;
 
 
 @end
